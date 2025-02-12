@@ -5,6 +5,7 @@ import yePhoo from "../../assets/photos/Ye_Phoo.png";
 import Lottie from "lottie-react";
 // animations
 import smallHeartBg from "../../assets/animations/small-heart-bg.json";
+import { Link } from "react-router-dom";
 
 const Content = ({ startCotent }) => {
   const [cardMove, setCardMove] = useState("");
@@ -59,9 +60,9 @@ const Content = ({ startCotent }) => {
               Hello My pookie Phoo Phoo <br /> My pookie Phoo Phoo
             </p>
           </div>
-          <a href="/quiz" className="quiz f-love-day">
+          <Link to="/quiz" className="quiz f-love-day">
             Quiz{`->`}
-          </a>
+          </Link>
         </div>
       </div>
       <Lottie
