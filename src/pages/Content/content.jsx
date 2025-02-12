@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import phoo from "../../assets/photos/phoo.png";
 import yePhoo from "../../assets/photos/Ye_Phoo.png";
 // lottie
