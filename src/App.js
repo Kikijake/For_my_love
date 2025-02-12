@@ -1,11 +1,17 @@
-import logo from './logo.svg';
-import Homepage from './pages/Home/home';
-import './FontFamily.scss'
-import './App.scss';
+import { Suspense } from "react";
+import { BrowserRouter } from "react-router-dom";
+import "./FontFamily.scss";
+import "./App.scss";
+import Router from "./Routes/router";
+import Loading from "./components/Loading/loading";
 
 function App() {
   return (
-    <Homepage/>
+    <BrowserRouter>
+      <Suspense fallback={<Loading />}>
+        <Router />
+      </Suspense>
+    </BrowserRouter>
   );
 }
 

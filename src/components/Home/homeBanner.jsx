@@ -26,7 +26,10 @@ const HomeBanner = ({ handleLongPress }) => {
     <>
       <div className="vh-100 vw-100 d-flex justify-content-center align-items-center overflow-hidden">
         <div className="h-100 w-100 d-flex flex-column align-items-center justify-content-center position-relative">
-          <h1 className="f-love-day text-white mb-5">
+          <h1
+            className="f-love-day text-white mb-5"
+            style={{ fontSize: "5vw" }}
+          >
             <FontAwesomeIcon icon={faHeart} className="fs-1" />
             &nbsp;Hello My Baby Phoo Phoo!&nbsp;
             <FontAwesomeIcon icon={faHeart} className="fs-1" />
@@ -40,7 +43,12 @@ const HomeBanner = ({ handleLongPress }) => {
           >
             <FontAwesomeIcon icon={faHeart} className="fs-1" />
           </button>
-          <h1 className="f-love-day text-white mt-5">Please Hold My Heart</h1>
+          <h1
+            className="f-love-day text-white mt-5"
+            style={{ fontSize: "5vw" }}
+          >
+            Please Hold My Heart
+          </h1>
         </div>
         <Lottie
           animationData={smallHeartBg}
