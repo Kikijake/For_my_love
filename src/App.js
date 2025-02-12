@@ -8,9 +8,9 @@ import Loading from "./components/Loading/loading";
 function App() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<Loading />}>
+      {/* <Suspense fallback={<Loading />}> */}
         <Router />
-      </Suspense>
+      {/* </Suspense> */}
     </BrowserRouter>
   );
 }

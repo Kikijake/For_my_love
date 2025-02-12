@@ -7,7 +7,7 @@ const Router = () => {
     <Routes>
       <Route path="*" element={<Navigate to="/" />} />
       <Route path="/" name="homeScreen" element={<Home />} />
-      <Route path="/quiz" element={<Quiz />} />
+      {/* <Route path="/quiz" element={<Quiz />} /> */}
     </Routes>
   );
 };
