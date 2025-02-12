@@ -9,7 +9,8 @@ function App() {
   return (
     <BrowserRouter>
       {/* <Suspense fallback={<Loading />}> */}
-        <Router />
+      {/* <Router /> */}
+      hello
       {/* </Suspense> */}
     </BrowserRouter>
   );
