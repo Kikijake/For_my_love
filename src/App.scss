@@ -308,7 +308,7 @@
 }
 
 .result-card{
-  width: 50%;
+  width: 65%;
   aspect-ratio: 5/3;
   color: #d90368;
   position: relative;
@@ -321,6 +321,10 @@
   box-shadow: 0px 0px 40px #fff;
   border-radius: 20px;
   z-index: 2;
+
+  .card-text {
+    font-size: 4vw;
+  }
 
   .quiz {
       position: absolute;
