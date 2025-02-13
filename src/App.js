@@ -7,11 +7,13 @@ import Loading from "./components/Loading/loading";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Suspense fallback={<Loading />}>
-        <Router />
-      </Suspense>
-    </BrowserRouter>
+    <div className="App">
+      <BrowserRouter>
+        <Suspense fallback={<Loading />}>
+          <Router />
+        </Suspense>
+      </BrowserRouter>
+    </div>
   );
 }
 

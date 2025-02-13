@@ -14,6 +14,10 @@
   top: 30%;
 }
 
+.z2 {
+  z-index: 2;
+}
+
 .btn-heart {
   @keyframes pulse {
     25% {
@@ -218,12 +222,115 @@
         color: #d90368;
         text-shadow: 0px 0px 10px #fff;
       }
-      
+
       &:active {
         color: white;
       }
     }
   }
+}
+
+.questions-card {
+  width: 70%;
+  aspect-ratio: 5/2;
+  color: #d90368;
+
+  .level1 {
+    .header {
+      font-size: 6vw;
+    }
+    .question {
+      background-color: #fff;
+      border: 1vw solid #d90368;
+      box-shadow: 0px 0px 3vw #fff;
+      font-size: 4vw;
+      &.message {
+        font-size: 2vw;
+        border: 0.5vw solid #d90368;
+      }
+    }
+    .multiple-choices {
+      font-size: 10vw;
+      div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border: 1vw solid #d90368;
+        box-shadow: 0px 0px 3vw #fff;
+        margin: 1vw;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.2);
+        }
+        &:active {
+          border: 1vw solid #fff;
+        }
+      }
+    }
+  }
+  .level2 {
+    .header {
+      font-size: 6vw;
+    }
+    .question {
+      background-color: #fff;
+      border: 1vw solid #d90368;
+      box-shadow: 0px 0px 3vw #fff;
+      font-size: 4vw;
+      &.message {
+        font-size: 2vw;
+        border: 0.5vw solid #d90368;
+      }
+    }
+    .multiple-choices {
+      font-size: 3vw;
+      div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border: 0.5vw solid #d90368;
+        box-shadow: 0px 0px 3vw #fff;
+        margin: 1vw;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.2);
+        }
+        &:active {
+          border: 1vw solid #fff;
+        }
+      }
+    }
+  }
+}
+
+.result-card{
+  width: 50%;
+  aspect-ratio: 5/3;
+  color: #d90368;
+  position: relative;
+  background: linear-gradient(
+    153deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(214, 180, 196, 1) 52%,
+    rgba(217, 3, 104, 1) 100%
+  );
+  box-shadow: 0px 0px 40px #fff;
+  border-radius: 20px;
+  z-index: 2;
+
+  .quiz {
+      position: absolute;
+      bottom: 2%;
+      right: 2%;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.8vw;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -245,6 +352,13 @@
     }
   }
   .quiz-card {
+    width: 80%;
+  }
+  .questions-card {
+    width: 80%;
+    aspect-ratio: 5/3;
+  }
+  .result-card {
     width: 80%;
   }
 }

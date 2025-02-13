@@ -1,12 +1,15 @@
 import React from "react";
-import { Routes, Route} from "react-router-dom";
-import { Home, Quiz } from "./pages";
+import { Routes, Route, Navigate} from "react-router-dom";
+import { Home, Quiz, Questions, Result } from "./pages";
 
 const Router = () => {
   return (
     <Routes>
-      <Route path="*" name="homeScreen" element={<Home />} />
-      <Route path="/quiz" element={<Quiz />} />
+      <Route path="*" element={<Navigate to="/" />} />
+      <Route path="/" name="homeScreen" element={<Home />} />
+      <Route path="/quiz" name="quizScreen" element={<Quiz />} />
+      <Route path="/quiz/questions" name="questionsScreen" element={<Questions />} />
+      <Route path="/quiz/result" name="resultScreen" element={<Result />} />
     </Routes>
   );
 };
