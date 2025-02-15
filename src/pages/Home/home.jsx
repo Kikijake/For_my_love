@@ -18,10 +18,16 @@ const Homepage = () => {
 
   useEffect(() => {
     loadImage(KoKhant1png)
-      .then((src) => setImages((prev) => ({ ...prev, KoKhant1: src })))
+      .then((src) => {
+        setImages((prev) => ({ ...prev, KoKhant1: src }))
+        console.log("loaded image 1", src);  
+      })
       .catch((err) => console.error("Failed to load image", err));
     loadImage(KoKhant2png)
-      .then((src) => setImages((prev) => ({ ...prev, KoKhant2: src })))
+      .then((src) => {
+        setImages((prev) => ({ ...prev, KoKhant2: src }))
+        console.log("loaded image 2", src);
+      })
       .catch((err) => console.error("Failed to load image", err));
   }, []);
 
