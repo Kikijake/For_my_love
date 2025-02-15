@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import phoo from "../../assets/photos/phoo.png";
-import yePhoo from "../../assets/photos/Ye_Phoo.png";
 import KoKhant1 from "../../assets/photos/KoKhant1.png"
 import KoKhant2 from "../../assets/photos/KoKhant2.png"
 // lottie
@@ -9,7 +7,7 @@ import Lottie from "lottie-react";
 import smallHeartBg from "../../assets/animations/small-heart-bg.json";
 import { Link } from "react-router-dom";
 
-const Content = ({ startCotent }) => {
+const Content = ({ images }) => {
   const [cardMove, setCardMove] = useState("");
   const [cardHide, setCardHide] = useState({
     cardCorner: "",
@@ -17,7 +15,7 @@ const Content = ({ startCotent }) => {
   });
   useEffect(() => {
     setCardMove("active");
-  }, [startCotent]);
+  }, []);
   return (
     <div className="vh-100 bg-pink d-flex justify-content-center align-items-center">
       <div
@@ -25,7 +23,7 @@ const Content = ({ startCotent }) => {
       >
         <div className="card-bg">
           <img
-            src={KoKhant2}
+            src={images.KoKhant2}
             className={`card-corner ${cardMove} ${cardHide.cardCorner}`}
             alt=""
             onMouseEnter={() =>
@@ -36,7 +34,7 @@ const Content = ({ startCotent }) => {
             }
           />
           <img
-            src={KoKhant1}
+            src={images.KoKhant1}
             className={`card-corner2 ${cardMove} ${cardHide.cardCorner2}`}
             alt=""
             onMouseOver={() =>

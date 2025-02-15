@@ -9,3 +9,12 @@ export const simulateDelay = (importFunction, delay = 1000) => {
     setTimeout(() => resolve(importFunction()), delay);
   });
 };
+
+export const loadImage = (src) => {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.src = src;
+    img.onload = () => resolve(src);
+    img.onerror = (err) => reject(err);
+  });
+};
