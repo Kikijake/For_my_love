@@ -20,7 +20,7 @@ const Quiz = () => {
     <>
       <div className="vh-100 bg-pink d-flex justify-content-center align-items-center">
         <div className="quiz-card d-flex flex-column align-items-center justify-content-center">
-          <h1 className="mb-5 header f-love-day">Koko's Silly Quiz</h1>
+          <h1 className="mb-5 header f-love-day">Duu Duu's <br/> Silly Quiz</h1>
           <div className="d-flex flex-column justify-content-center quiz-btns">
             {showContinue && (
               <p className="mb-2 f-love-day btn-1" onClick={() =>navigate("/quiz/questions")}>Continue</p>

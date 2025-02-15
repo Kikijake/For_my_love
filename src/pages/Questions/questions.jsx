@@ -3,8 +3,6 @@ import LottieBackground from "../../components/background/lottieBackground";
 import Level1 from "../../components/Questions/level1";
 import Level2 from "../../components/Questions/level2";
 import Level3 from "../../components/Questions/level3";
-import Level4 from "../../components/Questions/level4";
-import Level5 from "../../components/Questions/level5";
 
 const Questions = () => {
   const [level, setLevel] = useState(0);
@@ -19,9 +17,7 @@ const Questions = () => {
       <div className="z2 questions-card">
         {level === 1 && <Level1 setLevel={setLevel} />}
         {level === 2 && <Level2 setLevel={setLevel} />}
-        {level === 3 && <Level3 setLevel={setLevel} />}
-        {level === 4 && <Level4 setLevel={setLevel} />}
-        {level === 5 && <Level5 />}
+        {level === 3 && <Level3/> }
       </div>
       <LottieBackground />
     </div>

@@ -13,16 +13,16 @@ const Result = () => {
       <div className="result-card">
         <div className="w-100 h-100  d-flex flex-column justify-content-center align-items-center">
           <h1 className="f-u-moe card-text">ရမှတ် = {marks}</h1>
-          {marks >= 5 ? (
+          {marks >= 3 ? (
             <h1 className="f-u-moe text-center card-text">
               အမှတ်ပြည့်ရတဲ့ အတွက် <br /> အတော်ဆုံးရည်းစားလေးဆုကို
-              ချီးမြှင့်လိုက်ပါတယ် <br /> Screenshot လေးပြပြီး
-              ချောကလပ်လာထုတ်လို့ရပါပြီ <br /> 🍫
+              ချီးမြှင့်လိုက်ပါတယ် <br /> Screenshot လေးပြပြီး <br />
+              မာလာရှမ်းကောစားလို့ရပါပြီ <br /> 🍝
             </h1>
-          ) : marks >= 3 ? (
+          ) : marks >= 1 ? (
             <h1 className="f-u-moe text-center card-text">
               အောင်မှတ်ရတဲ့ အတွက်ဂုဏ်ယူပါတယ် <br /> ဒါပေမဲ့ အမှတ်ပြည့်ရမှ
-              ချောကလပ်ကျွေးမှာပါ။ <br />
+              မာလာရှမ်းကောကျွေးမှာပါ။ <br />
               😋
             </h1>
           ) : (

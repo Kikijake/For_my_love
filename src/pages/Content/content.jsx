@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import phoo from "../../assets/photos/phoo.png";
 import yePhoo from "../../assets/photos/Ye_Phoo.png";
+import KoKhant1 from "../../assets/photos/KoKhant1.png"
+import KoKhant2 from "../../assets/photos/KoKhant2.png"
 // lottie
 import Lottie from "lottie-react";
 // animations
@@ -23,7 +25,7 @@ const Content = ({ startCotent }) => {
       >
         <div className="card-bg">
           <img
-            src={phoo}
+            src={KoKhant2}
             className={`card-corner ${cardMove} ${cardHide.cardCorner}`}
             alt=""
             onMouseEnter={() =>
@@ -34,7 +36,7 @@ const Content = ({ startCotent }) => {
             }
           />
           <img
-            src={yePhoo}
+            src={KoKhant1}
             className={`card-corner2 ${cardMove} ${cardHide.cardCorner2}`}
             alt=""
             onMouseOver={() =>
@@ -51,21 +53,18 @@ const Content = ({ startCotent }) => {
           </div>
           <div className="card-corner-text first f-u-moe">
             <p>
-              အရမ်းချစ်ဖို့ကောင်းတဲ့ ကိုကို့ကောင်မလေးရေ <br />
-              ကိုကို့အချစ်တွေက မင်းအတွက်ဖြစ်သလို <br />
-              မင်းအချစ်တွေကလဲ ကိုကို့အတွက်ပဲဖြစ်ရမယ်နော်။ <br />
-              ရှေ့လျှောက် ဂရုစိုက်မှုတွေနဲ့အတူ <br />{" "}
-              ပိုပြီးပိုပြီးချစ်သွားကြရအောင်နော် <br />
-              အရမ်းချစ်တယ်။
+              ကို့ကိုအမြဲ ချစ်ပေးပြီး ကို့ကို <br />
+              ယုံကြည်ပေးလို့ကျေးဇူးပါနော်လဲ့ရေ.... <br /> Vday
+              မှာနောက်ကျသွားတဲ့အတွက် sorry ပါနော်။
             </p>
           </div>
           <div className="card-corner-text second f-u-moe">
             <p>
-              ‌အရမ်းချစ်ရပါသော ရွှေဖူးလေး <br />
-              ကိုကို့ရဲ့ မပြည့်စုံမှုတွေကို နားလည်ပေးပြီး <br />
-              ခုချိန်ထိအနားမှာ ရှိနေပေးတဲ့အတွက် ကျေးဇူးပါ။ <br />
-              အနာဂတ်မှာ မင်းလေးနဲ့အတူ အမှတ်တရတွေ အများကြီး <br />
-              ဖန်တီး သွားနိုင်ဖို့ မျှော်လင့်ပါတယ်။
+              အနာဂတ်မှာ လဲ့အတွက် <br /> ပြည့်စုံတဲ့ လက်တွဲဖော်တစ်‌‌ယောက် အနေနဲ့{" "}
+              <br />
+              ကို့ဘဝအဆုံးထိ လဲ့ကိုပျော်‌ရွှင်မှုတွေပေးနိုင်အောင် <br />
+              ကြိုးစားသွားမယ်နော်... <br />
+              အရမ်းချစ်တယ်နော်... လဲ့ <br />
             </p>
           </div>
           <Link to="/quiz" className="quiz f-love-day">

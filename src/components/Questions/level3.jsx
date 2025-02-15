@@ -1,17 +1,19 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const Level3 = ({ setLevel }) => {
+const Level3 = () => {
   const [wrong, setWrong] = useState(false);
   const [right, setRight] = useState(false);
+    const navigate = useNavigate();
   const rightAnswer = () => {
     setRight(true);
     setWrong(false);
     setTimeout(() => {
       setRight(false);
-      setLevel(4);
-      localStorage.setItem("level", JSON.stringify(4));
+      localStorage.setItem("level", JSON.stringify(1));
       const currentMarks = JSON.parse(localStorage.getItem("marks"));
       localStorage.setItem("marks", JSON.stringify(currentMarks + 1));
+      navigate("/quiz/result");
     }, 2000);
   };
   const wrongAnswer = () => {
@@ -28,17 +30,17 @@ const Level3 = ({ setLevel }) => {
       <h1 className="text-center f-love-day text-white header">Level 3</h1>
       <div className="d-flex flex-column justify-content-center align-items-center">
         <div className="text-center f-u-moe question p-2">
-          အကြိုက်ဆုံး Anime
+          What is Duu Duu's Favourite Food?
         </div>
         <div className="d-flex f-u-moe flex-column justify-content-center align-items-center multiple-choices mt-3 justify-content-between">
+          <div className="q-btn" onClick={wrongAnswer}>
+            Mala Xiang Guo
+          </div>
           <div className="q-btn" onClick={rightAnswer}>
-            Made In Abyss
+            Duu Duu's mom cooked peanut noodles.
           </div>
           <div className="q-btn" onClick={wrongAnswer}>
-            One Piece
-          </div>
-          <div className="q-btn" onClick={wrongAnswer}>
-            Chain Saw Man
+            Fried rice
           </div>
         </div>
         {wrong && (

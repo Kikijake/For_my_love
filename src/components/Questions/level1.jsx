@@ -24,21 +24,21 @@ const Level1 = ({ setLevel }) => {
     }, 2000);
   };
   return (
-    <div className="w-100 level1">
+    <div className="w-100 level2">
       <h1 className="text-center f-love-day text-white header">Level 1</h1>
       <div className="d-flex flex-column justify-content-center align-items-center">
         <div className="text-center f-u-moe question p-2">
-          ကိုကို့အကြိုက်ဆုံး emoji ကို ရွေးပါ။
+          When did we start our relationship?
         </div>
-        <div className="d-flex justify-content-center multiple-choices mt-5 justify-content-between">
+        <div className="d-flex f-u-moe flex-column align-items-center justify-content-center multiple-choices mt-3 justify-content-between">
           <div className="q-btn" onClick={wrongAnswer}>
-            😂
+            19.8.2021
           </div>
           <div className="q-btn" onClick={rightAnswer}>
-            😋
+            19.8.2022
           </div>
           <div className="q-btn" onClick={wrongAnswer}>
-            👿
+            2023
           </div>
         </div>
         {wrong && (

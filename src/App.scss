@@ -115,9 +115,9 @@
       width: 40%;
       height: 100%;
       position: absolute;
+      transform: scale(1.1);
       bottom: -100%;
       left: -100%;
-      transform: rotate(7deg);
       object-fit: contain;
       transition: 2.2s;
       z-index: 1;
@@ -135,8 +135,8 @@
         opacity: 0%;
       }
       &.active {
-        bottom: -25%;
-        left: -7%;
+        bottom: -21%;
+        left: -3%;
       }
     }
 
@@ -343,12 +343,12 @@
     aspect-ratio: 5/3;
     .card-corner {
       &.active {
-        top: -28%;
+        top: -30% !important;
       }
     }
     .card-corner2 {
       &.active {
-        bottom: -29%;
+        bottom: -29% !important;
       }
     }
     .quiz {

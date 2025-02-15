@@ -28,17 +28,17 @@ const Level2 = ({ setLevel }) => {
       <h1 className="text-center f-love-day text-white header">Level 2</h1>
       <div className="d-flex flex-column justify-content-center align-items-center">
         <div className="text-center f-u-moe question p-2">
-          အကြိုက်ဆုံး အဆိုတော် / band
+          What is Duu Duu's birthday?
         </div>
         <div className="d-flex f-u-moe flex-column align-items-center justify-content-center multiple-choices mt-3 justify-content-between">
           <div className="q-btn" onClick={rightAnswer}>
-            Linkin Park
+            5.4.1999
           </div>
           <div className="q-btn" onClick={wrongAnswer}>
-            MGK
+            4.5.1999
           </div>
           <div className="q-btn" onClick={wrongAnswer}>
-            Post Malone
+            5.5.1999
           </div>
         </div>
         {wrong && (

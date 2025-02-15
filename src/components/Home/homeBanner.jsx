@@ -31,7 +31,7 @@ const HomeBanner = ({ handleLongPress }) => {
             style={{ fontSize: "5vw" }}
           >
             <FontAwesomeIcon icon={faHeart} className="fs-1" />
-            &nbsp;Hello My Baby Phoo Phoo!&nbsp;
+            &nbsp;Hello My Buu Buu!&nbsp;
             <FontAwesomeIcon icon={faHeart} className="fs-1" />
           </h1>
           <button
